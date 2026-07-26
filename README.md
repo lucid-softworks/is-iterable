@@ -7,6 +7,7 @@ iterables are supported.
 ```ts
 import { isIterable } from "@lucid-softworks/is-iterable";
 
+const value: unknown = new Set(["a", "b"]);
 if (isIterable(value)) {
   [...value];
 }
